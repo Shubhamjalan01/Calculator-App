@@ -1,0 +1,36 @@
+input[type="button"]
+         {
+         font-family: Verdana;
+         background-color:#34B1A4;
+         color: black;
+         border: none;
+         color: white;
+         padding: 10px 15px;
+         border-radius: 4px;
+         cursor: pointer;
+         width:100%
+         }
+         input[type=button]:hover {
+         background-color: #428079;
+         }
+         div {
+         border-radius: 5px;
+         background-color: #ffffff;
+         padding: 20px;
+         margin: auto;
+         width: 25%;
+         box-shadow: 5px 10px #888888;
+         margin-top: 120px;
+         }
+         input[type=text]{
+         font-Size: 18px;
+         font-family: Verdana;
+         text-align:right;
+         background-color: #D2D2D2;
+         height: 70px;
+         width: 100%;
+         padding: 12px 20px;
+         margin: 8px 0;
+         display: inline-block;
+         border: none;
+         }

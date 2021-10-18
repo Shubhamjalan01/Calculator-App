@@ -1,0 +1,107 @@
+<html>
+   <head>
+      <script>
+         function dis(val)
+         {
+             document.getElementById("result").value+=val
+         }
+         function solve()
+         {
+             let x = document.getElementById("result").value
+             let y = eval(x)
+             document.getElementById("result").value = y
+         }
+         function fact()
+         {  
+             var i, num, f;  
+             f = 1;  
+             num = document.getElementById("result").value;  
+             for(i = 1; i <= num; i++)    
+             {  
+                  f = f * i;  
+             }  
+             i = i - 1;    
+             document.getElementById("result").value = f   
+         }
+         function clr()
+         {
+             document.getElementById("result").value = ""
+         }
+      </script>
+      <style>
+         input[type="button"]
+         {
+         font-family: Verdana;
+         background-color:#34B1A4;
+         color: black;
+         border: none;
+         color: white;
+         padding: 10px 15px;
+         border-radius: 4px;
+         cursor: pointer;
+         width:100%
+         }
+         input[type=button]:hover {
+         background-color: #428079;
+         }
+         div {
+         border-radius: 5px;
+         background-color: #ffffff;
+         padding: 20px;
+         margin: auto;
+         width: 25%;
+         box-shadow: 5px 10px #888888;
+         margin-top: 120px;
+         }
+         input[type=text]{
+         font-Size: 18px;
+         font-family: Verdana;
+         text-align:right;
+         background-color: #D2D2D2;
+         height: 70px;
+         width: 100%;
+         padding: 12px 20px;
+         margin: 8px 0;
+         display: inline-block;
+         border: none;
+         }
+      </style>
+   </head>
+   <body style="
+background-color: #EDD1BD">
+     <div><p style="font-family: Courier; font-size: 25px"><b>Simple Calculator</b></p>
+      <table style="width:100%">
+         <tr>
+            <td colspan="5"><input type="text" id="result" disabled></td>
+         </tr>
+         <tr>
+            <td><input type="button" value="1" onclick="dis('1')"/> </td>
+            <td><input type="button" value="2" onclick="dis('2')"/> </td>
+            <td><input type="button" value="3" onclick="dis('3')"/> </td>
+            <td><input type="button" value="/" onclick="dis('/')"/> </td>
+            <td><input type="button" value="clear" onclick="clr()"/> </td>
+         </tr>
+         <tr>
+            <td><input type="button" value="4" onclick="dis('4')"/> </td>
+            <td><input type="button" value="5" onclick="dis('5')"/> </td>
+            <td><input type="button" value="6" onclick="dis('6')"/> </td>
+            <td><input type="button" value="*" onclick="dis('*')"/> </td>
+            <td><input type="button" value="-" onclick="dis('-')"/> </td>
+         </tr>
+         <tr>
+            <td><input type="button" value="7" onclick="dis('7')"/> </td>
+            <td><input type="button" value="8" onclick="dis('8')"/> </td>
+            <td><input type="button" value="9" onclick="dis('9')"/> </td>
+            <td rowspan="3"><input  style="height: 76px" type="button" value="+" onclick="dis('+')"/> </td>
+            <td><input type="button" value="Facto" onclick="fact()"/> </td>
+         </tr>
+         <tr>
+            <td><input type="button" value="0" onclick="dis('0')"/> </td>
+            <td><input type="button" value="00" onclick="dis('00')"/> </td>
+            <td><input type="button" value="." onclick="dis('.')"/> </td>
+            <td><input type="button" value="=" onclick="solve()"/> </td>
+         </tr>
+      </table>
+     </div>
+   </body>
+</html>
